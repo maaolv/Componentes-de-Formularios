@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Conhecendo Componentes</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+
+</head>
+<body>
+	<div class="topo">
+		<h2>COMPONENTES DE FORMULÁRIO</h2>
+	</div>
+	<div class="conteudo">
+		<form action="" method="POST">
+			<div>
+				<label for="nome">Nome: </label>
+				<input type="text" name="nome" id="nome" placeholder="Informe o seu nome completo">
+			</div>
+
+			<div>
+				<label for="email">E-mail: </label>
+				<input type="email" name="email" id="email" placeholder="Informe o seu e-mail">
+			</div>
+
+			<div>
+				<label for="senha">Senha: </label>
+				<input type="password" name="senha" id="senha" placeholder="Informe uma senha">
+			</div>
+
+			<div>
+				<label for="tel">Telefone: </label>
+				<input type="tel" name="tel" id="tel" pattern="([0-9}{2})[0-9]{5}-[0-9]{4}" placeholder="(00)00000-0000">
+			</div>
+
+			<div>
+				<label for="idade">Idade: </label>
+				<input type="number" name="idades" id="idade">
+			</div>
+
+			<div>
+				<label for="obs">Observação: </label>
+				<textarea cols="80" rows="3" name="obs" id="obs"></textarea>
+			</div>
+
+			<div>
+				<label for="genero">Gênero</label>
+				<select name="genero" id="genero">
+					<option value="'1">Selecione...</option>
+					<option value="masculino">Masculino</option>
+					<option value="feminino">Feminino</option>
+				</select>
+			</div>
+
+			<div class="opcoes">
+				<p>Como você chegou até aqui?</p>
+				<label for="revista">
+					<input type="checkbox" name="revista" value="revista"> Revista
+				</label>
+
+				<label for="jornal">
+					<input type="checkbox" name="jornal" value="jornal"> Jornal
+				</label>
+
+				<label for="tv">
+					<input type="checkbox" name="tv" value="tv"> TV
+				</label>
+			</div>
+
+			<div class="opcoes">
+				<p>Selecione o seu idioma nativo:</p>
+				<label for="idioma">
+					<input type="radio" name="idioma"> Português
+				</label>
+
+				<label for="idioma">
+					<input type="radio" name="idioma"> Inglês
+				</label>
+
+				<label for="idioma">
+					<input type="radio" name="idioma"> Espanhol
+				</label>
+
+				<label for="idioma">
+					<input type="radio" name="idioma"> Chinês
+				</label>
+			</div>
+
+			<div class="opcoes">
+				<label for="perfil">Foto de Perfil</label>
+				<input type="file" name="perfil">
+			</div>
+
+			<div class="opcoes">
+				<button type="submit">Enviar</button>
+				<button type="clear">Limpar</button>
+				<input type="button" name="clique" value="Aperte Aqui!" onclick="alert('Olá Pessoal!')">
+			</div>
+		</form>
+	</div>
+
+</body>
+</html>
